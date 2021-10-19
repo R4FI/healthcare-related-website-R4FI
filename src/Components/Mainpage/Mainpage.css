@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,900&display=swap');
+
+.service{
+
+    background-color:  #3090C7;
+
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+}
+.cardbg1{
+    background-color: #659EC7;
+    color: black;
+    font-size: 17px;
+}
+.cardbg2{
+    background-color: #368BC1;
+    color: black;
+}
+.cardbg3{
+    background-color: #488AC7;
+    color: black;
+        
+}
+
