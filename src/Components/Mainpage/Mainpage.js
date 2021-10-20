@@ -1,6 +1,6 @@
 import React from 'react';
 import './Mainpage.css';
-import { Carousel, Container, } from 'react-bootstrap';
+import {Container } from 'react-bootstrap';
 import { CardGroup,Card,Button} from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
@@ -8,48 +8,23 @@ import { ListGroup } from 'react-bootstrap';
 const Mainpage = () => {
     return (
         <div>
-                <Carousel className=""> 
-  <Carousel.Item >
-    <img
-      className="d-block w-100"
-      src="https://images.pexels.com/photos/8413291/pexels-photo-8413291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      alt="Second slide"
-      src="https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    />
+               <Card className="bg-dark text-white">
+  <Card.Img src="https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image" />
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      alt="Third slide"
-      src="https://images.pexels.com/photos/4167539/pexels-photo-4167539.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+  <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
+   <Card.Text className="fw-bolder fs-1">
+    <Card.Title  className="text-dark">Weklcome To Medico</Card.Title>
+      <h1  className="text-dark">We Take Care Your Healthy Life</h1>
+    <Button className="text-dark" variant="outline-info" size="lg">Get A Qoute</Button>
+    </Card.Text>
+  </Card.ImgOverlay>
+</Card>
 
                 {/* second part */}
            <div className="container mt-3">
            <CardGroup>
   <Card  className="cardbg1">
-    <Card.Img variant="top" src="https://cdn-icons.flaticon.com/png/512/67/premium/67804.png?token=exp=1634572628~hmac=2b0ee5dffb47e4fb20c356a5138c03fa" className="w-25 m-auto" />
+    <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/512/33/33798.png" className="w-25 m-auto" />
     <Card.Body>
       <Card.Title>Emergency Ambulance</Card.Title>
       <Card.Text>
@@ -70,7 +45,7 @@ const Mainpage = () => {
     </Card.Body>
   </Card>
   <Card className="cardbg3">
-    <Card.Img variant="top" src="https://cdn-icons.flaticon.com/png/512/1172/premium/1172079.png?token=exp=1634573007~hmac=e6e9af556f826299eb82b168bf4ab196"  className="w-25 m-auto mt-3"/>
+    <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/512/2443/2443442.png"  className="w-25 m-auto mt-3"/>
     <Card.Body>
       <Card.Title>Doctor Timetable</Card.Title>
       <Card.Text>
