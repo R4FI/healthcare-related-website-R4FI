@@ -19,7 +19,7 @@ All the services ar well described and separate as well.
 
 You can log in and sign up using google email.
 
-## Appointment system
+### Appointment system
 You can meet doctor in your time.You can chose ypur time and date.
 
 
