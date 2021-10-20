@@ -14,3 +14,13 @@ h1{
     font-weight: 400;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 25%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+

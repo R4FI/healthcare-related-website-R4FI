@@ -12,11 +12,10 @@ import Mainpage from './Components/Mainpage/Mainpage';
 import Serivce from './Components/Service/Serivce';
 import Login from './Components/Login/Login';
 import Detail from './Components/Service/Detail/Detail';
-
+import Register from './Components/Register/Register';
 function App() {
   return (
     <div className="App">
-      
       <Router>
       <Home></Home>
         <Switch>
@@ -42,6 +41,7 @@ function App() {
                 <Login></Login>
             </Route>
             <Route path="/register">
+              <Register></Register>
             </Route>
         </Switch>
         <Footer></Footer>

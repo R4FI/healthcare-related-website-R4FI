@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardGroup, Container } from 'react-bootstrap';
-import { Row,Col } from 'react-bootstrap';
+import { Card,  Container } from 'react-bootstrap';
+
 import Button from '@restart/ui/esm/Button';
 import { Link } from 'react-router-dom';
 const Data = (props) => {
@@ -8,10 +8,8 @@ const Data = (props) => {
     return (
         <div>
             
-             <Container>
-                <Row className="d-flex">
-                    <Col md={4}> 
-                    <CardGroup>
+            <Container>
+                  
                     <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={img} className="w-25 m-auto"/>
                 <Card.Body>
@@ -23,9 +21,7 @@ const Data = (props) => {
                     </Link>
                 </Card.Body>
                 </Card>
-                </CardGroup>
-                    </Col>
-                </Row>
+                
                 </Container>    
                
         </div>

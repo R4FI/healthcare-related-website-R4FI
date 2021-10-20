@@ -2,21 +2,9 @@ import React from 'react';
 import './Home.css';
 import { Navbar,Container,Nav,Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import initAuth from '../Firebase/Firebase.init';
-import { GoogleAuthProvider,getAuth, signInWithPopup, } from "firebase/auth";
-initAuth();
-const googleProvider = new GoogleAuthProvider();
-
+import useFirebase from '../../hook/useFirebase';
 const Home = () => {
-  const auth = getAuth();
-  const googleSign =()=>{
-        signInWithPopup (auth , googleProvider)
-        .then(result =>{
-
-          const user = result.user;
-          console.log(user);
-        })
-  }
+  const {user ,logOut} = useFirebase();
     return (
         <div>
             <Navbar bg="dark" expand="lg" variant="dark" >
@@ -30,7 +18,14 @@ const Home = () => {
         <Nav.Link as={Link} to={"/contact"}>Contact</Nav.Link>
         <Nav.Link as={Link} to={"/service"}>Service</Nav.Link>
         <Nav.Link as={Link} to={"/about"}>About US</Nav.Link>
+       
         <Button as={Link} to={"/login"} variant="outline-info">Log In</Button>
+        {user?.email &&
+     <Button onClick={logOut} variant="outline-info">LogOut </Button> }
+       <Navbar.Text>
+        Signed in as: <a href="#login">{user?.displayName}</a>
+      </Navbar.Text>
+      
       </Nav>
     </Navbar.Collapse>
   </Container>

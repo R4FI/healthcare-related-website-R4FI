@@ -17,7 +17,7 @@ const Serivce = () => {
         <div>
             
             <div className="grid">
-                <Row className="d-flex"> 
+                
               {
                         services.map(service => 
                         <Data service ={service}>
@@ -25,7 +25,7 @@ const Serivce = () => {
                         </Data>
                         )
                    }
-                   </Row>
+                   
                    </div>
             <div>
                 <Container className="mt-5"> 
